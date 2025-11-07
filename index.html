@@ -584,7 +584,7 @@
             </div>
             
             <div class="rate-info">
-                <p><i class="fas fa-ad"></i> প্রতি বিজ্ঞাপন = ২ টাকা</p>
+                <p><i class="fas fa-ad"></i> প্রতি বিজ্ঞাপন = 1 টাকা</p>
                 <p><i class="fas fa-money-bill-wave"></i> ন্যূনতম উত্তোলন: ২০ টাকা</p>
                 <p><i class="fas fa-gift"></i> রেফারেল বোনাস: ৫ টাকা প্রতি ব্যবহারকারী</p>
             </div>
@@ -596,7 +596,7 @@
             
             <div class="action-buttons">
                 <button class="btn btn-primary" id="watch-ad-btn-earn" onclick="watchAd()">
-                    <i class="fas fa-play"></i> বিজ্ঞাপন দেখুন (২ টাকা)
+                    <i class="fas fa-play"></i> বিজ্ঞাপন দেখুন (1 টাকা)
                 </button>
                 <button class="btn btn-success" id="auto-ad-btn-earn" onclick="startAutoAds()">
                     <i class="fas fa-robot"></i> স্বয়ংক্রিয় বিজ্ঞাপন
@@ -620,7 +620,7 @@
             </div>
             
             <div class="rate-info">
-                <p><i class="fas fa-ad"></i> প্রতি বিজ্ঞাপন = ২ টাকা</p>
+                <p><i class="fas fa-ad"></i> প্রতি বিজ্ঞাপন = 1 টাকা</p>
                 <p><i class="fas fa-gift"></i> রেফারেল বোনাস: ৫ টাকা প্রতি ব্যবহারকারী</p>
             </div>
         </div>
@@ -721,7 +721,7 @@
 
     <script>
         // Constants
-        const POINTS_PER_AD = 2.00; // প্রতি বিজ্ঞাপনে ২ টাকা
+        const POINTS_PER_AD = 1.00; // প্রতি বিজ্ঞাপনে 1 টাকা
         const MIN_WITHDRAW_TAKA = 20; // ন্যূনতম উত্তোলন ২০ টাকা
         const REFERRAL_BONUS = 5.00; // রেফারেল বোনাস ৫ টাকা
         
@@ -903,7 +903,7 @@
         function watchAd() {
             if (isAdLoading) return;
             
-            if (typeof window.show_9472189 !== 'function') {
+            if (typeof window.show_10151404 !== 'function') {
                 document.getElementById('ad-status').innerHTML = '<i class="fas fa-exclamation-circle"></i> বিজ্ঞাপন সিস্টেম প্রস্তুত নয়। দয়া করে অপেক্ষা করুন...';
                 return;
             }
@@ -928,7 +928,7 @@
                     createCoinAnimation();
                     
                     // Show success notification
-                    showNotification(`২ টাকা যোগ হয়েছে! আপনার ব্যালেন্স: ${(earnedPoints + referralEarnings).toFixed(2)} টাকা`, 'success');
+                    showNotification(`1 টাকা যোগ হয়েছে! আপনার ব্যালেন্স: ${(earnedPoints + referralEarnings).toFixed(2)} টাকা`, 'success');
                     
                     // Check if earned enough for withdrawal
                     if (earnedPoints + referralEarnings >= MIN_WITHDRAW_TAKA) {
@@ -1156,3 +1156,4 @@
     </script>
 </body>
 </html>
+
